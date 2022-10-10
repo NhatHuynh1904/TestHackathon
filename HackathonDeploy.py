@@ -16,7 +16,7 @@ def prediction_bean(input_data):
     var = 'Cenos AI\'s diagnosis:\n'
     disease = ["Allergy: ", "Cold: ", "Covid: ", "Flu: "]
     for i in range(0, 4, 1):
-       disease[i] += prediction[i]
+       disease[i] += str(prediction[i])
     return disease
 
   
