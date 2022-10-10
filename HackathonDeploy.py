@@ -13,14 +13,15 @@ def prediction_bean(input_data):
     reshape_data = to_numpy.reshape(1, -1)
     prediction = a.predict(reshape_data)
     final = np.argmax(prediction)
+    var = 'Cenos AI\'s diagnosis: %s'
     if final == 0:
-        return 'Allergy'
+        return var % 'Allergy'
     elif final == 1:
-        return 'Cold'
+        return var % 'Cold'
     elif final == 2:
-        return 'Covid-19'
+        return var % 'Covid-19'
     else:
-        return 'Flu'
+        return var % 'Flu'
 
   
 
