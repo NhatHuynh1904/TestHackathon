@@ -53,9 +53,9 @@ def main():
             inputData[i] = 1
         else:
             inputData[i] = 0
-    st.title("Doctor Section")
     type = 0
     if st.button("Submit"):
+        st.title("Doctor Section")
         type = prediction_bean(inputData)
 
     st.success(type)
