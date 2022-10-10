@@ -58,9 +58,10 @@ def main():
     if st.button("Submit"):
         st.title("Doctor Section")
         type = prediction_bean(inputData)
+        st.title("Similar patient records from database:")
 
     st.success(type)
-    st.title("Similar patient records from database:")
+    
 
 if __name__ == '__main__':
     main()
