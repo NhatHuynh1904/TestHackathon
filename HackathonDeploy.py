@@ -25,6 +25,7 @@ def prediction_bean(input_data):
 def main():
     st.title("Cenos AI")
     inputData = [None] * 20
+    st.title("Patient Input")
     #Get input data:
     inputData[0] = st.radio("Cough?", ['Yes', 'No'])
     inputData[1] = st.radio("Muscle Aches?", ['Yes', 'No'])
@@ -52,7 +53,7 @@ def main():
             inputData[i] = 1
         else:
             inputData[i] = 0
-
+    st.title("Doctor Section")
     type = 0
     if st.button("Submit"):
         type = prediction_bean(inputData)
