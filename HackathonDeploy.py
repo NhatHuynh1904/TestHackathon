@@ -5,7 +5,7 @@ import tensorflow as tf
 
 
 
-a = tf.keras.models.load_model("new_.sav")
+a = tf.keras.models.load_model("new_low.sav")
 
 
 def prediction_bean(input_data):
