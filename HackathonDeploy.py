@@ -27,7 +27,7 @@ def main():
     inputData = [None] * 20
     st.title("Patient Input")
     #Get input data:
-    inputData[0] = st.radio("Cough?", ['Yes', 'No'], index = None)
+    inputData[0] = st.radio("Cough?", ['Yes', 'No'])
     inputData[1] = st.radio("Muscle Aches?", ['Yes', 'No'])
     inputData[2] = st.radio("Tiredness?", ['Yes', 'No'])
     inputData[3] = st.radio("Sore Throat?", ['Yes', 'No'])
