@@ -11,7 +11,7 @@ a = tf.keras.models.load_model("finalize_flu_covid_allergy_cold.sav")
 def prediction_bean(input_data):
     to_numpy = np.asarray(input_data)
     reshape_data = to_numpy.reshape(1, -1)
-    prediction = a.predict(reshape_data)
+    prediction = a.predict(reshape_data).flatten()
     final = np.argmax(prediction)
     var = 'Cenos AI\'s diagnosis:\n'
     disease = ["Allergy: ", "Cold: ", "Covid: ", "Flu: "]
