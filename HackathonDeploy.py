@@ -15,7 +15,7 @@ def prediction_bean(input_data):
     final = np.argmax(prediction)
     var = 'Cenos AI\'s diagnosis:\n'
     disease = ["Allergy: ", "Cold: ", "Covid: ", "Flu: "]
-    for i in range(0, 4, 1):
+    for i in range(4):
        disease[i] += str(prediction[i])
     return disease
 
