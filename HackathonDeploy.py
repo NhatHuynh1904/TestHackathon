@@ -5,7 +5,7 @@ import tensorflow as tf
 
 
 
-a = tf.keras.models.load_model("finalize_flu_covid_allergy_cold.sav")
+a = tf.keras.models.load_model("new_final.sav")
 
 
 def prediction_bean(input_data):
