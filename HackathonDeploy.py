@@ -18,6 +18,7 @@ def prediction_bean(input_data):
     for i in range(4):
        disease[i] += str(prediction[i])
     return disease
+    
 
   
 
@@ -59,6 +60,7 @@ def main():
         type = prediction_bean(inputData)
 
     st.success(type)
+    st.title("Similar patient records from database:")
 
 if __name__ == '__main__':
     main()
